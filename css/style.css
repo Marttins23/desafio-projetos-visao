@@ -5,7 +5,7 @@
 
 .icon-bar {
     position: fixed;
-    z-index:0;
+    z-index: 1;
     bottom: 0;
     right: 20px;
     -webkit-transform: translateY(-50%);
@@ -14,7 +14,7 @@
   }
   
   .icon-bar a {
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
