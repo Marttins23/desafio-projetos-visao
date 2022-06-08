@@ -16,9 +16,6 @@ a {
   a, a:hover {
     text-decoration: none !important; }
 
-.content {
-  padding: 7rem 0; }
-
 h2 {
   font-size: 20px; }
 
@@ -35,13 +32,15 @@ h2 {
     background-color: #f8f9fa; }
 
 .media-29101 img {
+  height: 300px;
+  object-fit: cover;
   margin-bottom: 20px; }
 
 .media-29101 h3 {
-  font-size: 18px;
-  font-weight: 900 !important; }
-  .media-29101 h3 a {
-    color: #6c757d; }
+  font-size: 22px;
+  font-weight: 500 !important; }
+  .media-29101 h3 {
+    color: #E2DFD2; }
 
 .owl-2-style .owl-nav {
   display: none; }
@@ -63,6 +62,6 @@ h2 {
       transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
       margin: 3px; }
     .owl-2-style .owl-dots .owl-dot.active span {
-      background: #007bff; }
+      background: #D95032; }
     .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
       outline: none; }

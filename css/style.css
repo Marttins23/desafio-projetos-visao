@@ -1,13 +1,57 @@
+.drk:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#000;
+  opacity:0.6;
+}
+
+#logo {
+  height: 60px;
+}
+
+.titulo-logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.fixed-top.scrolled {
+  background-color: #1f2225 !important;
+  border-bottom: 1px solid rgb(112, 112, 112);
+  transition: background-color 200ms linear, border-bottom 100ms linear;
+}
+
+#barra-menu a:hover {
+  color: #b3b3b3;
+}
+
+.menu-navegacao a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.icone-menu-toggle {
+  border: 1px solid #D95032;
+}
+
+.navbar-toggler-icon  {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(217, 80, 50, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
 .imagem-carrossel {
     object-fit: cover;
-    height: 93vh;
+    height: 100vh;
 }
 
 .icon-bar {
     position: fixed;
     z-index: 1;
     bottom: 0;
-    right: 20px;
+    right: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -23,7 +67,7 @@
   }
   
   .icon-bar a:hover {
-    background-color: #000;
+    background-color: rgb(68, 68, 68);
   }
   
   .facebook {
@@ -39,4 +83,105 @@
   .whatsapp {
     background: #128C7E;
     color: white;
+  }
+
+  .titulo-secao h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .titulo-secao span {
+    font-size: 1.2rem;
+  }
+
+  .paragrafo {
+    font-size: 1.1rem;
+  }
+
+  .section-contato a {
+    color: black;
+  }
+
+  .card-modal {
+    background-color: #D95032;
+  }
+
+  .texto-laranja {
+    color: #D95032;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+  }
+
+  .laranja-claro {
+    color: #FFA364;
+  }
+
+  .prova-social i {
+    color: #E2DFD2;
+  }
+
+  .prova-social h4 {
+    color: #D95032;
+  }
+
+  .fundo-preto {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  address {
+    margin-bottom: 0;
+  }
+
+  .card-text-bottom {
+    top: inherit;
+  }
+
+  .card-cortes {
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+
+  .invisivel {
+    visibility: hidden;
+    transition: 0.5s linear;
+  }
+
+  .card:hover {
+    cursor: pointer;
+  }
+
+  .card:hover .card-cortes {
+    opacity: 0.8;
+  }
+
+  .card:hover .invisivel {
+    visibility: visible;
+  }
+
+  .section-cortes .card, .media-29101 {
+    transition: 0.5s;
+  }
+
+  .section-cortes .card:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 2px rgba(255, 255, 255, 0.2);
+  }
+
+  .media-29101:hover h3 {
+    transform: scale(1.05);
+    color: #D95032;
+  }
+
+  .logo-contatos img {
+    height: 150px;
+  }
+
+  .section-contato i {
+    width: 40px;
+    padding: 8px;
+  }
+
+  .section-contato a span {
+    font-size: 1.05rem;
+    font-weight: 500;
   }

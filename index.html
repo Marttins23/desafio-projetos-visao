@@ -21,18 +21,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-navegacao">
-            <a class="navbar-brand" href="#">João DuCort</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg fixed-top" id="barra-menu"> 
+            <a class="navbar-brand texto-laranja" href="#" >
+                <img id="logo" src="assets/img/logo6.png" alt="Logo da Barbearia">
+                <span class="titulo-logo align-bottom">João DuCort</span>
+            </a>
+            <button class="navbar-toggler icone-menu-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#menu-navegacao">Início <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#sobre">Sobre</a>
-                <a class="nav-item nav-link" href="#cortes">Cortes</a>
-                <a class="nav-item nav-link" href="#produtos">Produtos</a>
-                <a class="nav-item nav-link" href="#contato">Contato</a>
+              <div class="navbar-nav menu-navegacao">
+                <a class="nav-item nav-link active texto-laranja align-bottom" href="#">Início <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link texto-laranja" href="#sobre">Sobre</a>
+                <a class="nav-item nav-link texto-laranja" href="#cortes">Cortes</a>
+                <a class="nav-item nav-link texto-laranja" href="#produtos">Produtos</a>
+                <a class="nav-item nav-link texto-laranja" href="#contato">Contato</a>
                 <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
               </div>
             </div>
@@ -46,21 +49,21 @@
                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item drk active">
                     <img src="assets/img/carrossel-1.jpg" class="d-block w-100 imagem-carrossel" alt="...">
-                    <div class="carousel-caption d-none d-md-block h-50">
+                    <div class="carousel-caption d-none d-md-block h-50 p-0">
                         <h2 class="display-4">A vida não é perfeita, mas seu cabelo pode ser.</h2>
                     </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item drk">
                     <img src="assets/img/carrossel-2.jpg" class="d-block w-100 imagem-carrossel" alt="...">
-                    <div class="carousel-caption d-none d-md-block h-50">
+                    <div class="carousel-caption d-none d-md-block h-50 p-0">
                         <h2 class="display-4">A vida não é perfeita, mas seu cabelo pode ser.</h2>
                     </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item drk">
                     <img src="assets/img/carrossel-3.jpg" class="d-block w-100 imagem-carrossel" alt="...">
-                    <div class="carousel-caption d-none d-md-block h-50">
+                    <div class="carousel-caption d-none d-md-block h-50 p-0">
                         <h2 class="display-4">A vida não é perfeita, mas seu cabelo pode ser.</h2>
                     </div>
                     </div>
@@ -81,11 +84,14 @@
             <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
         </div>
     </header>
-    <main>
+    <main class="bg-dark pt-5">
         <div class="container">
             <section class="section-sobre" id="sobre">
-                <h2 class="text-center mt-5 mb-5">Sobre a Barbearia</h2>
-                <p class="text-center text-secondary mb-5">
+                <div class="text-center titulo-secao mb-5">
+                    <h2 class="mt-5 mb-2 texto-laranja">Sobre a Barbearia</h2>
+                    <span class="text-secondary">Saiba um pouco mais sobre nós</span>
+                </div>
+                <p class="text-center mb-5 paragrafo p-2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque cursus dui, in fermentum 
                     augue feugiat ut. Integer pharetra justo non nisi congue euismod. Ut iaculis aliquam risus, mollis 
                     malesuada quam tempus id. Phasellus euismod mauris condimentum, aliquam mi nec, dignissim odio. Aenean 
@@ -95,11 +101,11 @@
                     Aliquam vitae erat vehicula, facilisis nunc quis, rhoncus massa. Praesent at ultricies lorem.
                    
                 </p>
-                <div class="row">
+                <div class="row prova-social pt-3 pb-5">
                     <div class="col-sm text-center">
-                        <i class="fa fa-flag fa-5x"></i>
-                        <h3>Missão</h3>
-                        <p>
+                        <i class="fa fa-flag fa-4x"></i>
+                        <h4>Missão</h4>
+                        <p class="text-left paragrafo mt-4 p-2">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque cursus dui, in fermentum 
                             augue feugiat ut. Integer pharetra justo non nisi congue euismod. Ut iaculis aliquam risus, mollis 
                             malesuada quam tempus id. Phasellus euismod mauris condimentum, aliquam mi nec, dignissim odio. Aenean 
@@ -108,9 +114,9 @@
                         </p>
                     </div>
                     <div class="col-sm text-center">
-                        <i class="fa fa-eye fa-5x"></i>
-                        <h3>Visão</h3>
-                        <p>
+                        <i class="fa fa-eye fa-4x"></i>
+                        <h4>Visão</h4>
+                        <p class="text-left paragrafo mt-4 p-2">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque cursus dui, in fermentum 
                             augue feugiat ut. Integer pharetra justo non nisi congue euismod. Ut iaculis aliquam risus, mollis 
                             malesuada quam tempus id. Phasellus euismod mauris condimentum, aliquam mi nec, dignissim odio. Aenean 
@@ -119,9 +125,9 @@
                         </p>
                     </div>
                     <div class="col-sm text-center">
-                        <i class="fa fa-rocket fa-5x"></i>
-                        <h3>Valores</h3>
-                        <p>
+                        <i class="fa fa-rocket fa-4x"></i>
+                        <h4>Valores</h4>
+                        <p class="text-left paragrafo mt-4 p-2">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque cursus dui, in fermentum 
                             augue feugiat ut. Integer pharetra justo non nisi congue euismod. Ut iaculis aliquam risus, mollis 
                             malesuada quam tempus id. Phasellus euismod mauris condimentum, aliquam mi nec, dignissim odio. Aenean 
@@ -133,93 +139,225 @@
 
             </section>
             <section class="section-cortes" id="cortes">
-                <h2 class="text-center mt-5 mb-5">Cortes</h2>
-                <div class="row justify-content-around">
-                    <div class="card text-center mb-5" style="width: 16rem;">
-                        <img src="assets/img/corte-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Corte com Máquina</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h5>R$25,00</h5>
+                <div class="text-center titulo-secao mb-5">
+                    <h2 class="mt-5 mb-2 texto-laranja">Cortes</h2>
+                    <span class="text-secondary">Renove seu visal com um de nossos incríveis cortes</span>
+                </div>
+                <div class="row justify-content-around pt-2 pb-5">                 
+                    <div class="card bg-dark text-white text-center mb-5" data-toggle="modal" data-target="#modal-cortes-maquina" style=" width: 16rem; height: 400px; cursor: pointer">
+                        <img src="assets/img/corte-1.jpg" class="card-cortes" alt="...">
+                        <div class="card-img-overlay card-text-bottom">
+                          <h4 class="card-title laranja-claro">À Máquina</h4>
+                          <p class="card-text invisivel">Clique e confira!</p>
                         </div>
                     </div>
-                    <div class="card text-center mb-5" style="width: 16rem;">
-                        <img src="assets/img/corte-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Corte com Tesoura</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h5>R$25,00</h5>
+                    <div class="card bg-dark text-white text-center mb-5" style="width: 16rem; height: 400px;">
+                        <img src="assets/img/corte-2.jpg" class="card-cortes" alt="...">
+                        <div class="card-img-overlay card-text-bottom">
+                          <h4 class="card-title laranja-claro">À Tesoura</h4>
+                          <p class="card-text invisivel">Clique e confira!</p>
                         </div>
                     </div>
-                    <div class="card text-center mb-5" style="width: 16rem;">
-                        <img src="assets/img/corte-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Corte Infantil</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h5>R$25,00</h5>
+                    <div class="card bg-dark text-white text-center mb-5" style="width: 16rem; height: 400px;">
+                        <img src="assets/img/corte-3.jpg" class="card-cortes" alt="...">
+                        <div class="card-img-overlay card-text-bottom">
+                          <h4 class="card-title laranja-claro">Infantis</h5>
+                          <p class="card-text invisivel">Clique e confira!</p>
                         </div>
                     </div>
-                    <div class="card text-center mb-5" style="width: 16rem;">
-                        <img src="assets/img/corte-4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Corte Feminino</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h5>R$25,00</h5>
+                    <div class="card bg-dark text-white text-center mb-5" style="width: 16rem; height: 400px;">
+                        <img src="assets/img/corte-4.jpg" class="card-cortes" alt="...">
+                        <div class="card-img-overlay card-text-bottom">
+                          <h4 class="card-title laranja-claro">Femininos</h4>
+                          <p class="card-text invisivel">Clique e confira!</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- MODAIS DE CORTES -->
+
+                <div class="modal fade" id="modal-cortes-maquina" tabindex="-1" role="dialog" aria-labelledby="modal-cortes-maquina-label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light fundo-preto text-center">
+                          <h3 class="modal-title texto-laranja" id="modal-cortes-maquina-label">Cortes à Máquina</h3>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body bg-dark">
+                            <div class="row justify-content-around">
+                                <div class="card text-center mb-5 card-modal border border-secondary" style="width: 16rem;">
+                                    <img src="assets/img/corte-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Degradê</h5>
+                                    </div>
+                                    <div class="card-body">
+                                    <p class="text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5>R$25,00</h5>
+                                    </div>
+                                </div>
+                                <div class="card text-center mb-5 card-modal border border-secondary" style="width: 16rem;">
+                                    <img src="assets/img/corte-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Tradicional</h5>
+                                    </div>
+                                    <div class="card-body">
+                                    <p class="text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5>R$25,00</h5>
+                                    </div>
+                                </div>
+                                <div class="card text-center mb-5 card-modal border border-secondary" style="width: 16rem;">
+                                    <img src="assets/img/corte-3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Surfista</h5>
+                                    </div>
+                                    <div class="card-body">
+                                    <p class="text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5>R$25,00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- FIM MODAIS DE CORTES-->
                 
             </section>
             <section class="section-produtos" id="produtos">
-                <h2 class="text-center mt-5 mb-5">Produtos</h2>
-                    <div class="content">      
+                <div class="text-center titulo-secao mb-5">
+                    <h2 class="mt-5 mb-2 texto-laranja">Produtos</h2>
+                    <span class="text-secondary mb-5">Escolha seus produtos e compre diretamente em nosso endereço.</span>
+                </div>
+                    <div class="content pt-2 pb-5">      
                         <div class="site-section mb-5">
                             <div class="container owl-2-style">                                                                       
                                 <div class="owl-carousel owl-2">
-                                <div class="media-29101">
-                                    <a href="#"><img src="carrossel/images/img_1.jpg" alt="Image" class="img-fluid"></a>
-                                    <h3><a href="#">Consectetur Adipisicing Elit</a></h3>
-                                </div>
-                                <div class="media-29101">
-                                    <a href="#"><img src="carrossel/images/img_2.jpg" alt="Image" class="img-fluid"></a>
-                                    <h3><a href="#">Beatae Doloribu</a></h3>
-                                </div>
-                                <div class="media-29101">
-                                    <a href="#"><img src="carrossel/images/img_3.jpg" alt="Image" class="img-fluid"></a>
-                                    <h3><a href="#">Accusantium Eius Soluta</a></h3>
-                                </div>
-                                <div class="media-29101">
-                                    <a href="#"><img src="carrossel/images/img_4.jpg" alt="Image" class="img-fluid"></a>
-                                    <h3><a href="#">Consectetur Adipisicing Elit</a></h3>
-                                </div>
-                                <div class="media-29101">
-                                    <a href="#"><img src="carrossel/images/img_5.jpg" alt="Image" class="img-fluid"></a>
-                                    <h3><a href="#">Beatae Doloribu</a></h3>
-                                </div>
-                                <div class="media-29101">
-                                    <a href="#"><img src="carrossel/images/img_6.jpg" alt="Image" class="img-fluid"></a>
-                                    <h3><a href="#">Accusantium Eius Soluta</a></h3>
-                                </div>
+                                    <div class="media-29101" data-toggle="modal" data-target="#modal-geis-pomadas" style="cursor: pointer;">
+                                        <img src="carrossel/images/categoria-gel.jpg" alt="Image" class="img-fluid">
+                                        <h3 class="text-center">Géis e Pomadas</h3>
+                                    </div>
+                                    <div class="media-29101" data-toggle="modal" data-target="#modal-shampoos" style="cursor: pointer;">
+                                        <img src="carrossel/images/img_2.jpg" alt="Image" class="img-fluid">
+                                        <h3 class="text-center">Shampoos</h3>
+                                    </div>
+                                    <div class="media-29101" data-toggle="modal" data-target="#modal-condicionadores" style="cursor: pointer;">
+                                        <img src="carrossel/images/img_3.jpg" alt="Image" class="img-fluid">
+                                        <h3 class="text-center">Condicionadores</h3>
+                                    </div>
+                                    <div class="media-29101" data-toggle="modal" data-target="#modal-cremes" style="cursor: pointer;">
+                                        <img src="carrossel/images/img_4.jpg" alt="Image" class="img-fluid">
+                                        <h3 class="text-center">Cremes de Barbear</h3>
+                                    </div>
+                                    <div class="media-29101" data-toggle="modal" data-target="#modal-minoxidil" style="cursor: pointer;">
+                                        <img src="carrossel/images/img_5.jpg" alt="Image" class="img-fluid">
+                                        <h3 class="text-center">Minoxidil</h3>
+                                    </div>
+                                    <div class="media-29101" data-toggle="modal" data-target="#modal-perfumes" style="cursor: pointer;">
+                                        <img src="carrossel/images/categoria-perfume.jpg" alt="Image" class="img-fluid">
+                                        <h3 class="text-center">Perfumes</h3>
+                                    </div>
                                 </div>                       
                             </div>
                         </div>                  
                     </div>
-    
+                    <div class="modal fade" id="modal-geis-pomadas" tabindex="-1" role="dialog" aria-labelledby="modal-geis-pomadas-label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header bg-dark fundo-preto text-center">
+                              <h3 class="modal-title texto-laranja" id="modal-geis-pomadas-label">Géis e Pomadas</h3>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body bg-secondary">
+                                <div class="row justify-content-around">
+                                    <div class="card text-center mb-5" style="width: 16rem;">
+                                        <img src="assets/img/corte-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Corte com Máquina</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5>R$25,00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card text-center mb-5" style="width: 16rem;">
+                                        <img src="assets/img/corte-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Corte com Tesoura</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5>R$25,00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card text-center mb-5" style="width: 16rem;">
+                                        <img src="assets/img/corte-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Corte Infantil</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5>R$25,00</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
             </section>
             <section class="section-contato" id="contato">
-                <h2 class="text-center mt-5 mb-5">Contato</h2>
+                <div class="text-center titulo-secao mb-5">
+                    <h2 class="mt-5 mb-2 texto-laranja">Contato</h2>
+                    <span class="text-secondary mb-5">Visite-nos ou mande uma mensagem.</span>
+                </div>
+                <div class="container mt-2 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="logo-contatos p-3">
+                            <img src="assets/img/logo6.png" alt="">
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="column">
+                                <div class="contato-telefone">
+                                    <a href="tel:+553138550000" class="text-white-50">
+                                        <i class="fa fa-phone fa-lg"></i>
+                                        <span> (31) 3855 - 0000 </span>
+                                    </a>
+                                </div>
+                                <div class="contato-email">
+                                    <a href="mailto:contato@ducort.com" class="text-white-50">
+                                        <i class="fa fa-envelope fa-lg"></i>
+                                        <span> contato@ducort.com </span>
+                                    </a>
+                                </div>
+                                <address class="contato-endereco">
+                                    <a href="https://goo.gl/maps/AtUgzWGBWQq95bJ18" target="_blank" rel="noopener noreferrer" class="text-white-50">
+                                        <i class="fa fa-map-marker fa-lg"></i>
+                                        <span> Rua A, n° 39, Bairro Castelo, João Monlevade - MG</span>
+                                    </a>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5957.657839162299!2d-43.162076425563704!3d-19.836177995399584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa507511efdbbd3%3A0x55a7ef3c198b9753!2sInstituto%20de%20Ci%C3%AAncias%20Exatas%20e%20Aplicadas%20-%20ICEA%2FUFOP!5e0!3m2!1spt-BR!2sbr!4v1654028063207!5m2!1spt-BR!2sbr" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </div>
     </main>
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">2022 - Equipe 6 - Visão Jr.</span>
+    <footer class="bg-dark text-center text-white">
+        <div class="text-center p-3 fundo-preto">
+            © 2022 Copyright:
+            <a class="text-white">DuCort Barbearia</a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="js/index.js"></script>
     <!--CARROSSEL-->
     <!--<script src="carrossel/js/jquery-3.3.1.min.js"></script>-->
     <!--<script src="carrossel/js/popper.min.js"></script>-->
