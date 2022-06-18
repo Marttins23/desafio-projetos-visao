@@ -103,7 +103,23 @@
   }
 
   .card-modal {
-    background-color: #D95032;
+    height: 400px;
+    width: 16rem;
+    border: 2px solid rgb(70, 70, 70);
+  }
+
+  .card-modal .imagem-card {
+    flex-grow: 1;
+    max-height: 315px;
+  }
+
+  .card-modal .card-body {
+    background: linear-gradient(30deg, rgba(52,58,64,1) 0%, rgba(217,80,50,1) 90%);
+    flex-grow: 0;
+  }
+
+  .card-modal .card-body {
+    padding: 10px 0;
   }
 
   .texto-laranja {
@@ -184,4 +200,9 @@
   .section-contato a span {
     font-size: 1.05rem;
     font-weight: 500;
+  }
+
+  .imagem-card img {
+    height:100%;
+    object-fit: cover;
   }
